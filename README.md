@@ -129,6 +129,8 @@
 
 [fasterWhisper和MoneyPrinterPlus无缝集成](https://mp.weixin.qq.com/s/dSZjpfqUKBz3PyAOYvJKGw)
 
+[再升级!MoneyPrinterPlus集成GPT_SoVITS](https://mp.weixin.qq.com/s/7jdNLemItcJJUhz4OsjlzQ)
+
 
 # 界面概览
 
@@ -158,7 +160,7 @@
 # 更新预告
 
 * 准备接入stable diffusion和comfyUI， OOOOO，太牛了！
-* 已经支持GPTsoVITS本地语音模型啦,教程晚点上。
+* 已经支持GPTsoVITS本地语音模型啦,教程[再升级!MoneyPrinterPlus集成GPT_SoVITS](https://mp.weixin.qq.com/s/7jdNLemItcJJUhz4OsjlzQ)
 * 已经支持本地语音识别模型fasterwhisper, 教程[fasterWhisper和MoneyPrinterPlus无缝集成](https://mp.weixin.qq.com/s/dSZjpfqUKBz3PyAOYvJKGw)。 可关注我公众号获得最新进度。
 * 已经支持本地语音模型ChatTTS了，教程 [在MoneyPrinterPlus中使用本地chatTTS语音模型](https://mp.weixin.qq.com/s/bToXG_3XSYHKVI6Nf5W3Dw)
 * 支持本地大模型工具Ollama [MoneyPrinterPlus全面支持本地Ollama大模型](https://mp.weixin.qq.com/s/Q1C7kxJytDeQ6v12I5vdoQ)
@@ -765,7 +767,7 @@ mac环境下，在项目根目录下面执行sh start.sh即可。
   </tr>
 </thead>
 <tr>
-<td align="center"><img  src="https://flydean-1301049335.cos.ap-guangzhou.myqcloud.com/img/202408092154805.png"></img></td>
+<td align="center"><img  src="https://flydean-1301049335.cos.ap-guangzhou.myqcloud.com/img/202408161055592.png"></img></td>
 <td align="center"><img  src="https://flydean-1301049335.cos.ap-guangzhou.myqcloud.com/img/202408021732303.png"></img></td>
 </tr>
 </table>

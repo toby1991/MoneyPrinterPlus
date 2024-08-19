@@ -20,6 +20,7 @@ from services.llm.openai_service import MyOpenAIService
 from services.llm.tongyi_service import MyTongyiService
 from services.resource.pexels_service import PexelsService
 from services.resource.pixabay_service import PixabayService
+from services.sd.sd_service import SDService
 from services.video.merge_service import merge_get_video_list, VideoMergeService, merge_generate_subtitle
 from services.video.video_service import get_audio_duration, VideoService, VideoMixService
 from tools.tr_utils import tr
@@ -54,6 +55,8 @@ def get_resource_provider():
         return PexelsService()
     if resource_provider == "pixabay":
         return PixabayService()
+    if resource_provider == "stableDiffusion":
+        return SDService()
 
 
 def get_llm_provider(llm_provider):
@@ -115,8 +118,6 @@ def main_try_test_local_audio():
     if selected_local_audio_tts_provider == "GPTSoVITS":
         audio_service = GPTSoVITSAudioService()
     audio_service.read_with_content(video_content)
-
-
 
 
 def main_try_test_audio():
@@ -388,6 +389,19 @@ def main_generate_ai_video_for_mix(video_generator):
                 print("final file with subtitle:", video_file)
             st.session_state["result_video_file"] = video_file
             status.update(label=tr("Generate Video completed!"), state="complete", expanded=False)
+
+
+def main_generate_ai_video_from_img(video_generator):
+    print("main_generate_ai_video_from_img begin:")
+    with video_generator:
+        st_area = st.status(tr("Generate Video in process..."), expanded=True)
+        with st_area as status:
+            sd_service = SDService()
+            video_content = st.session_state.get('video_content')
+            video_list, audio_list, text_list = sd_service.sd_get_video_list(video_content)
+            pass
+
+    pass
 
 
 def main_generate_ai_video_for_merge(video_generator):
